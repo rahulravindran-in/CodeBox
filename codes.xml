@@ -3,27 +3,22 @@
 
 <Entity>
 <Name>Shared Preference</Name>
-<Code>
 
-static SharedPreferences GlobalSharedPref;  // Always keep it static
+<Code>static SharedPreferences GlobalSharedPref;  // Always keep it static
 GlobalSharedPref = this.getSharedPreferences("com.nxstudio.appname", MODE_PRIVATE);
 
 // To add a value to Shared Preference
 GlobalSharedPref.edit().putString("Name","Value").apply();
 
 // To Get Value out of shared Preferences
-GlobalSharedPref.getString("Name", "Default Value");
-
-</Code>
+GlobalSharedPref.getString("Name", "Default Value");</Code>
 </Entity>
 
 
 
 <Entity>
 <Name>Get Source Code Of a Website</Name>
-<Code>
-
-public static String GetSourceCodeOfWebsite(String URL_GET) {
+<Code>public static String GetSourceCodeOfWebsite(String URL_GET) {
 
     /*      String fetched_data stores all data fetched
     *      This method gets the source code of the Url passed through the urlget Parametre
@@ -50,9 +45,8 @@ public static String GetSourceCodeOfWebsite(String URL_GET) {
     }
 
     return fetched_data;
-}
-
-</Code>
+}</Code>
+    
 </Entity>
 
 
@@ -60,9 +54,8 @@ public static String GetSourceCodeOfWebsite(String URL_GET) {
 
 <Entity>
 <Name>Regular Expressions (data between 2 expression)</Name>
-<Code>
-
-public static ArrayList ArrayListRegex(String PatternBegginingEndAndRegex, String PatternSource) {
+    
+<Code>public static ArrayList ArrayListRegex(String PatternBegginingEndAndRegex, String PatternSource) {
 
         /*  Sample usage regularExpression("<expression>(.*?)</expression>", source);
          *  Regex used ==> (.*?) ==> This creates an arraylist of all words matching between those charecters
@@ -79,10 +72,7 @@ public static ArrayList ArrayListRegex(String PatternBegginingEndAndRegex, Strin
 
         }
         return ArraylistToAdd;
-}
-
-
-</Code>
+}</Code>
 </Entity>
 
 </Root>
